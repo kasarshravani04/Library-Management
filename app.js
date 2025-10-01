@@ -1,16 +1,18 @@
 import {book} from "./book.js";
-import{Library} from "./library.js";
+import {library} from "./library.js";
 //target elements
 // 1> form
 
 const add_book_form = document.getElementById(
     "add_book_form"
 )
-const myLib = new Library("My Library","Night City");
+console.log(add_book_form);
+add_book_form.addEventListener("submit", onSubmit);
+const myLib = new library("My Library","Night City");
 
 // on submit function=>
 
-function onsubmit(event){
+function onSubmit(event){
     event.preventDefault();
     let bookTitle = event.target[0].value;
     let bookAuthor = event.target[1].value;

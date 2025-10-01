@@ -9,7 +9,7 @@ export class library{
     @params => book (object)
   */
 
-addbook(book){
+addBook(book){
     const{title,author,genre,isbn} = book;
     if(!title && !author && !genre && !isbn){
         return alert("details missing");
