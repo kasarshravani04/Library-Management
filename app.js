@@ -8,7 +8,7 @@ const add_book_form = document.getElementById(
 )
 const myLib = new Library("My Library","Night City");
 
-// on submit function
+// on submit function=>
 
 function onsubmit(event){
     event.preventDefault();
