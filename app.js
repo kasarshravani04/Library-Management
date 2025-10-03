@@ -10,6 +10,11 @@ console.log(add_book_form);
 add_book_form.addEventListener("submit", onSubmit);
 const myLib = new library("My Library","Night City");
 
+
+myLib.bookList = 
+JSON.parse(localStorage.getItem("bookList")) || [];
+
+
 // on submit function=>
 
 function onSubmit(event){

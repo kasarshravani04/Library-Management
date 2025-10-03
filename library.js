@@ -4,7 +4,7 @@ export class library{
     constructor(name,location){
         this.name = name,
         this.location = location,
-        this.booklist = [];
+        this.bookList = [];
     }
    /*
     @params => book (object)
@@ -15,18 +15,18 @@ addBook(book){
     if(!title && !author && !genre && !isbn){
         return alert("details missing");
     }*/
-    this.booklist.push(book);
+    this.bookList.push(book);
  
     localStorage.setItem(
-    "booklist",
-    JSON.stringify(this.booklist)
+    "bookList",
+    JSON.stringify(this.bookList)
   );
 
   this.showBookList() ;
 }
   showBookList(){
     container.innerHTML= "";
-    this.booklist.forEach((book) =>{
+    this.bookList.forEach((book) =>{
       let div = document.createElement("div");
       div.classList = "book__card";
       let h2 = document.createElement("h2");
