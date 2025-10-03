@@ -15,4 +15,4 @@ export class book{
        this.quantity = quantity || 1;
        this.borrowedCopies = 0;
     }
-}
+}   
