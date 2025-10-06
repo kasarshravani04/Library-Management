@@ -37,6 +37,7 @@ const newBook = new book(
 );  
 myLib.addBook(newBook);
 myLib.showBookList();
+myLib.showList();
 console.log(myLib);
 
 }

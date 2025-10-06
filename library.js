@@ -23,6 +23,7 @@ addBook(book){
   );
 
   this.showBookList() ;
+  this.showList()  ;
 }
   showBookList(){
     container.innerHTML= "";
@@ -36,7 +37,8 @@ addBook(book){
     } )
 
   }
-  showBookList(){
+
+  showList(){
     container.innerHTML= "";
     this.bookList.forEach((book) =>{
       let div = document.createElement("div");
