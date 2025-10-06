@@ -36,4 +36,16 @@ addBook(book){
     } )
 
   }
+  showBookList(){
+    container.innerHTML= "";
+    this.bookList.forEach((book) =>{
+      let div = document.createElement("div");
+      div.classList = "book__card";
+      let h2 = document.createElement("h2");
+      h2.innerText = book.author;
+      div.appendChild(h2);
+      container.appendChild(div);
+    } )
+
+  }
 }
