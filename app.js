@@ -36,7 +36,14 @@ const newBook = new book(
    bookQuantity, 
 );  
 myLib.addBook(newBook);
-myLib.showBookList();
-console.log(myLib);
+/*myLib.showBookList();
+console.log(myLib);*/
+
+  event.target[0].value = "";
+  event.target[1].value = "";
+  event.target[2].value = "Select Option";
+  event.target[3].value = "";
+  event.target[4].value = "";
+  event.target[5].value = "";
 
 }
