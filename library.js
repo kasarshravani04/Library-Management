@@ -33,7 +33,7 @@ addBook(book){
     JSON.stringify(this.bookList)
   );
 
-  this.showBookList() ;
+/*  this.showBookList() ;
 }
   showBookList(){
     container.innerHTML= "";
@@ -44,15 +44,13 @@ addBook(book){
       h2.innerText = book.title;
       div.appendChild(h2);
       let h3 = document.createElement("h3");
-      h4.innerText = book.author;
+      h3.innerText = book.author;
       div.appendChild(h3);
       let h4 = document.createElement("h4");
       h4.innerText = book.isbn;
       div.appendChild(h4);
       container.appendChild(div);
-    } )
-
+    } )*/
   }
-
-  
 }
+
