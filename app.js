@@ -8,42 +8,42 @@ const add_book_form = document.getElementById(
 )
 console.log(add_book_form);
 add_book_form.addEventListener("submit", onSubmit);
+
 const myLib = new library("My Library","Night City");
-
-
 myLib.bookList = 
 JSON.parse(localStorage.getItem("bookList")) || [];
 
 
-// on submit function=>
-
+//Submit Handler
 function onSubmit(event){
     event.preventDefault();
-    let bookTitle = event.target[0].value;
-    let bookAuthor = event.target[1].value;
-    let bookGenre = event.target[2].value;
-    let bookIsbn = event.target[3].value;
-    let bookPublicationYear = event.target[4].value;
-    let bookQuantity = event.target[5].value;
-
-
+    
+    const title = document.getElementById("title").value;
+    const author = document.getElementById("author").value;
+    const genre= document.getElementById("genre").value;
+    const isbn = document.getElementById("isbn").value;
+    const publishYear = parseInt(
+      document.getElementById("publish_year").value
+    );
+    const quantity =parseInt(
+       document.getElementById("quantity").value
+    );
+    
 const newBook = new book(
-   bookTitle,
-   bookAuthor,
-   bookGenre,
-   bookIsbn,
-   bookPublicationYear,
-   bookQuantity, 
+   title,
+   author,
+   genre,
+   isbn,
+   publishYear,
+   quantity, 
 );  
 myLib.addBook(newBook);
-/*myLib.showBookList();
-console.log(myLib);*/
 
-  event.target[0].value = "";
-  event.target[1].value = "";
-  event.target[2].value = "Select Option";
-  event.target[3].value = "";
-  event.target[4].value = "";
-  event.target[5].value = "";
+//Reset form
+addBookFrom.reset();
+
+alert(
+  "Book added successfully! Check the book list page."
+);
 
 }
