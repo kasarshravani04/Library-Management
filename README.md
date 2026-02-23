@@ -43,15 +43,6 @@ This project showcases my ability to handle data persistence on the client side.
 
 ---
 
-### 🏅 My GitHub Achievements
-<p align="left">
-  <img src="https://github.com/ryo-ma/github-profile-trophy/raw/master/img/trophy.png" width="400" alt="trophies">
-</p>
-
-- **Pull Shark:** Awarded for merging successful pull requests.
-- **Quickdraw:** Awarded for rapid issue and PR resolution.
-
----
 
 ### 🤝 Connect with Me
 - **LinkedIn:** [linkedin.com/in/shravanikasar](https://www.linkedin.com/in/shravanikasar04/)
